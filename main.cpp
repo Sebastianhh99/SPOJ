@@ -2,11 +2,16 @@
 
 using namespace std;
 
-map<int,int> coins;
+vector<int> cost;
+vector<int> weight;
 int wPigEmpty,wPigFull;
 
-int minCost(int actualW){
-       
+int minCost(int actualW,int actualM){
+    if(actualW==wPigFull) return actualM
+    else if(actualW>wPigFull) return INT_MAX
+    else{
+       return 
+    }
 }
 
 int main(){
@@ -18,12 +23,13 @@ int main(){
         cin>>n;
         for(int i=0;i<n;i++){
             scanf("%d %d",&p,&w);
-            coins[p]=w;
+            cost.push_back(p);
+            weight.push_back(w);
         }
         wPigFull-=wPigEmpty;
         if(wPigFull<0) cout<<"This is impossible."<<endl;
         else{
-            
+            cout<<minCost(0,0)<<endl;
         }
     }
     return 0;
