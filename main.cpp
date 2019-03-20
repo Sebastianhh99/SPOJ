@@ -5,6 +5,9 @@ using namespace std;
 map<int,int> coins;
 int wPigEmpty,wPigFull;
 
+int minCost(int actualW){
+       
+}
 
 int main(){
     int cases,n,p,w;
@@ -20,7 +23,7 @@ int main(){
         wPigFull-=wPigEmpty;
         if(wPigFull<0) cout<<"This is impossible."<<endl;
         else{
-
+            
         }
     }
     return 0;
