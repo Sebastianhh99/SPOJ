@@ -7,10 +7,14 @@ vector<int> weight;
 int wPigEmpty,wPigFull;
 
 int minCost(int actualW,int actualM){
+    int ans=INT_MAX;
     if(actualW==wPigFull) return actualM
     else if(actualW>wPigFull) return INT_MAX
     else{
-       return 
+       for(int i=0;i<cost.size();i++){
+           ans=min(ans,minCost(actualW+weight[i],actualM+cost[i]));
+       }
+       return ans;
     }
 }
 
